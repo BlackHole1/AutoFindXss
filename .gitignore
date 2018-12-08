@@ -1,0 +1,26 @@
+# OSX
+#
+.DS_Store
+
+# Android/IJ
+#
+.idea
+
+# node.js
+#
+node_modules/
+package-lock.json
+npm-debug.log*
+
+dist
+build
+dest
+.tmp
+tmp
+
+yarn.lock
+yarn*log
+.yarn*
+
+public
+.vscode

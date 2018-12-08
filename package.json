@@ -1,0 +1,29 @@
+{
+  "name": "auto-find-xss",
+  "version": "0.0.1",
+  "main": "./dist/index.js",
+  "license": "GPL-3.0",
+  "scripts": {
+    "start": "npm run eslint && cross-env NODE_ENV=development webpack --config config/webpack.config.js -w --progress",
+    "build:dev": "npm run eslint && cross-env NODE_ENV=development webpack --config config/webpack.config.js",
+    "build:pro": "npm run eslint && cross-env NODE_ENV=production webpack --config config/webpack.config.js",
+    "eslint": "eslint --fix --ext .ts,.tsx src"
+  },
+  "devDependencies": {
+    "@types/chrome": "^0.0.75",
+    "cross-env": "^5.2.0",
+    "css-loader": "^1.0.1",
+    "eslint": "^5.10.0",
+    "eslint-plugin-import": "^2.14.0",
+    "eslint-plugin-react": "^7.11.1",
+    "eslint-plugin-typescript": "^0.14.0",
+    "less": "^3.9.0",
+    "less-loader": "^4.1.0",
+    "style-loader": "^0.23.1",
+    "ts-loader": "^5.3.1",
+    "typescript": "3.1.1",
+    "typescript-eslint-parser": "^21.0.2",
+    "webpack": "^4.26.1",
+    "webpack-cli": "^3.1.2"
+  }
+}
