@@ -23,7 +23,9 @@
     "ts-loader": "^5.3.1",
     "typescript": "3.1.1",
     "typescript-eslint-parser": "^21.0.2",
+    "uuid": "^3.3.2",
     "webpack": "^4.26.1",
     "webpack-cli": "^3.1.2"
-  }
+  },
+  "dependencies": {}
 }

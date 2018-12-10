@@ -1,3 +1,5 @@
+const webpack = require('webpack');
+const uuidv1 = require('uuid/v1');
 const path = require('path');
 
 const env = process.env.NODE_ENV;
@@ -12,6 +14,11 @@ module.exports = {
   watchOptions: {
     ignored: [ 'dist', 'config', 'node_modules', '.gitignore', '.eslintrc.js' ]
   },
+  plugins: [
+    new webpack.DefinePlugin({
+      Identifier: JSON.stringify(`AutoFindXss_${uuidv1()}`),
+    })
+  ],
   devtool: (env === 'production') ? 'none' : 'inline-source-map',
   module: {
     rules: [

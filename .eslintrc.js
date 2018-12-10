@@ -1,5 +1,8 @@
 module.exports = {
   parser: "typescript-eslint-parser",
+  globals: {
+    "Identifier": false
+  },
   plugins: [
     "typescript",
     "import",
@@ -17,7 +20,7 @@ module.exports = {
     "no-undef-init": "error",  // 禁止将变量初始化为 undefined
     "comma-spacing": [ "error", { "before":false,"after":true } ],  // 控制逗号前后的空格
     "array-bracket-spacing": [ "error", "always" ],  // 数组之间需要带空格
-    "max-len": [ 1, 100 ],  // 强制一行的最大长度
+    "max-len": [ 1, 150 ],  // 强制一行的最大长度
     "no-trailing-spaces": "error",  // 禁用行尾空格
     "semi": [ "error", "always" ], // 强制使用分号
     "no-regex-spaces": "error",  // 禁止正则表达式字面量中出现多个空格
@@ -27,6 +30,5 @@ module.exports = {
     "no-const-assign": "error",  // 不允许改变用const声明的变量
     "no-duplicate-imports": "error",  // 禁止重复模块导入
     "prefer-const": [ "error", { "destructuring": "all", } ], //优先使用const
-
   }
 };
